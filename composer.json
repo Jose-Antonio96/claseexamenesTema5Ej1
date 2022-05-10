@@ -6,12 +6,12 @@
     },
     "autoload":{
         "psr-4":{ 
-            "ITEC\\Presencial\\DAW\\examen\\": "src/classes"
+            "ITEC\\PRESENCIAL\\DAW\\PROG\\examen\\": "src/classes/"
         }
     },
     "autoload-dev": {
         "psr-4":{
-            "ITEC\\Presencial\\DAW\\examen\\": "src/classes"
+            "ITEC\\PRESENCIAL\\DAW\\PROG\\examen\\": "src/classes/"
         }
     }
 }
