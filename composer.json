@@ -1,0 +1,27 @@
+{
+    "require":{
+        "php":"^8"
+    },
+    "require-dev": {
+        "php":"^8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload":{
+        "files": [
+            "src/examen.php"
+        ],
+        "psr-4":{
+            "PHPUnit\\": "vendor/phpunit/phpunit/src/", 
+            "ITEC\\Presencial\\DAW\\examen\\": "src/classes"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "src/examen.php"
+        ],
+        "psr-4":{
+            "PHPUnit\\": "vendor/phpunit/phpunit/src/", 
+            "ITEC\\Presencial\\DAW\\examen\\": "src/classes"
+        }
+    }
+}
