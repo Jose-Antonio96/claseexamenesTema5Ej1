@@ -15,6 +15,11 @@ class listadopreguntas{
      *  ]
      * ]
      */
+    /*
+    private __construct(array $preguntas){
+    $this->preguntas =[]:
+    }
+    */
     private function __construct(array $preguntas){
         foreach($preguntas as $uniqueidentifier=>$pregunta){
             $this->preguntas[]=pregunta::createPregunta($pregunta["description"],$uniqueidentifier,$pregunta["maxgrade"]);
