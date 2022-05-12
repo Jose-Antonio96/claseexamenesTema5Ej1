@@ -1,4 +1,4 @@
 <?php
     namespace ITEC\PRESENCIAL\DAW
 
-    class hora{}
+    class hora
