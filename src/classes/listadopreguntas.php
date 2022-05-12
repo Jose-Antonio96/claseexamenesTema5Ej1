@@ -4,28 +4,13 @@ use ITEC\PRESENCIAL\DAW\PROG\examen\pregunta;
 
 class listadopreguntas{
     private array $preguntas;
-    /**
-     * Undocumented function
-     * 
-     * @param array $preguntas
-     * [
-     *  "identifier"=>[
-     *      "description"=>"",
-     *      "maxgrade=>0
-     *  ]
-     * ]
-     */
-    /*
-    private __construct(array $preguntas){
-    $this->preguntas =[]:
-    }
-    */
-    public function __construct(array $preguntas){
-        foreach($preguntas as $uniqueidentifier=>$pregunta){
-            $this->preguntas[]=pregunta::createPregunta($pregunta["description"],$uniqueidentifier,$pregunta["maxgrade"]);
-        }
+    private function __construct(array $preguntas){
+    $this->preguntas =[];
     }
 
+    public function addCreatePregunta(string $description, )
+        this-> 
+   
     public function addPregunta(pregunta $pregunta){
         $this->preguntas[] = $pregunta;
     }

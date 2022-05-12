@@ -2,19 +2,13 @@
 namespace ITEC\PRESENCIAL\DAW\PROG\examen;
 
 class pregunta{
-    private int $uniqueidentifier;
     private string $description;
-    /*
     private static $lastidentifier=0;
-    */
     private int $maxgrade;
 
-    public function __construct(int $uniqueidentifier, string $description, int $maxgrade){
-        $this->uniqueidentifier = $uniqueidentifier;
+    public function __construct(int $lastidentifier, string $description, int $maxgrade){
         $this->description = $description ;
-        /*
         $this->identifier = self::$lastidentifier++;
-        */
         $this->maxgrade = $maxgrade;
     }
    
