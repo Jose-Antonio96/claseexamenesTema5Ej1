@@ -20,7 +20,7 @@ class listadopreguntas{
     $this->preguntas =[]:
     }
     */
-    private function __construct(array $preguntas){
+    public function __construct(array $preguntas){
         foreach($preguntas as $uniqueidentifier=>$pregunta){
             $this->preguntas[]=pregunta::createPregunta($pregunta["description"],$uniqueidentifier,$pregunta["maxgrade"]);
         }
@@ -41,4 +41,24 @@ class listadopreguntas{
         }
         return $total;
     }
+
+    public function getpregunta(int $uniqueidentifier):pregunta{
+       foreach($this-> preguntas as $pregunta)
+        if($pregunta->isThisIdentifier($uniqueidentifier))
+            return $pregunta;
+        return null;
+    }
+
+    public function getpreguntabydescription(string $description):listadopreguntas{
+        $listadopreguntas = new listadopreguntas();
+        foreach($this-> preguntas as $pregunta)
+            if ($pregunta->contain($description))
+                $listadopreguntas->addPregunta($pregunta);
+        return $listadopreguntas;
+    }
+
+    //En las preguntas, habiendo una descripción que es un string, lo que buscamos ahora
+    //es generar un filtro con un listado de preguntas, introduciendo una palabra como referente
+
+    
 }

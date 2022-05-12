@@ -42,6 +42,10 @@ class pregunta{
         return $this->identifier === $identifier;
     }
 
+    public function containpreguntas(string $description):bool{
+        $nchars=(similar_text($this->description, $description));
+        return $nchars >= strlen($description);
+    }
     
 }
 
