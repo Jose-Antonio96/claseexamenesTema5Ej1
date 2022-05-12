@@ -4,7 +4,6 @@ use ITEC\PRESENCIAL\DAW\PROG\examen\pregunta;
 
 class listadopreguntas{
     private array $preguntas;
-    private int $lastuniqueidentifier;
     /**
      * Undocumented function
      * 
