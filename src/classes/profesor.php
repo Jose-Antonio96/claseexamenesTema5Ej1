@@ -35,4 +35,8 @@ class profesor{
     public function getFechanacimientoStr():string{
         return $this->fechanacimiento->getFechaStr();
     }
+
+    public function getID(): int{
+        return $this->id;
+    }
 }
