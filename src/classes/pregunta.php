@@ -2,18 +2,21 @@
 namespace ITEC\PRESENCIAL\DAW\PROG\examen;
 
 class pregunta{
+    private int $id;
     private string $description;
-    private static $lastidentifier=0;
     private int $maxgrade;
 
-    public function __construct(int $lastidentifier, string $description, int $maxgrade){
+    private static int $lastidentifier = 0;
+
+
+    public function __construct(string $description, int $maxgrade){
         $this->description = $description ;
         $this->identifier = self::$lastidentifier++;
         $this->maxgrade = $maxgrade;
     }
    
-    public static function createPregunta(int $uniqueidentifier, string $description, int $maxgrade){
-        return new pregunta($uniqueidentifier, $description, $maxgrade);
+    public static function createPregunta(string $description, int $maxgrade):pregunta {
+        return new pregunta($description, $maxgrade);
     }
 
     public function getuniqueIdentifier():int{
@@ -24,7 +27,7 @@ class pregunta{
         return $this->description;
     }
 
-    public function getmaxGrade():int{
+    public function getmaxgrade():int{
         return $this->maxgrade;
     }
 

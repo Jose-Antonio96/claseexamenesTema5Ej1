@@ -2,15 +2,24 @@
 namespace ITEC\PRESENCIAL\DAW\PROG\examen;
 use ITEC\PRESENCIAL\DAW\PROG\examen\pregunta;
 
-class listadopreguntas{
+class listadopreguntas {
     private array $preguntas;
-    private function __construct(array $preguntas){
-    $this->preguntas =[];
+
+    public function __construct(array $preguntas = []) {
+        $this -> preguntas = $preguntas;
     }
 
-    public function addCreatePregunta(string $description, )
-        this-> 
-   
+    public static function createQuestion(array $preguntas = []):listadopreguntas {
+        return new listadopreguntas($preguntas);
+    }
+    public function addNewQuestion(string $description, int $maxGraderade) {
+        $this -> preguntas[] = pregunta::createPregunta($description, $maxGraderade);
+    }
+
+    public function addQuestion(pregunta $pregunta) {
+        $this -> preguntas[] = $pregunta;
+    }
+
     public function addPregunta(pregunta $pregunta){
         $this->preguntas[] = $pregunta;
     }
