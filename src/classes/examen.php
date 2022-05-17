@@ -39,7 +39,6 @@ class examen{
 
     public function getFechaExamen(){
         return $this->fechaexamen;
-        ;
     }
 
     public function getAsignatura(){
