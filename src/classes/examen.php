@@ -33,23 +33,27 @@ class examen{
         return new examen($profesor, $fechaexamen, $asignatura, $listapreguntas, $hora);
     }
 
-    public function getProfesor(){
+    public function getProfesor():profesor{
         return $this->profesor;
     }
 
-    public function getFechaExamen(){
+    public function getFechaExamen():fecha{
         return $this->fechaexamen;
     }
 
-    public function getAsignatura(){
+    public function getAsignatura():asignaturas{
         return $this->asignaturas;
     }
 
-    public function getListaPreguntas(){
+    public function getListaPreguntas():listadopreguntas{
         return $this->listapreguntas;
     }
 
-    public function getHora(){
+    public function getHora():hora{
         return $this->hora;
+    }
+
+    public function setProfesor(profesor $profesor){
+        return $this-> profesor = $profesor;
     }
 }
