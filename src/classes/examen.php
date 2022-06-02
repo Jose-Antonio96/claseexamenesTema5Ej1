@@ -5,6 +5,7 @@ use ITEC\PRESENCIAL\DAW\PROG\examen\listadopreguntas;
 use ITEC\PRESENCIAL\DAW\PROG\examen\profesor;
 use ITEC\PRESENCIAL\DAW\PROG\examen\hora;
 use ITEC\PRESENCIAL\DAW\PROG\examen\asignaturas;
+use ITEC\PRESENCIAL\DAW\PROG\examen\pregunta;
 
 class examen{
     private profesor $profesor;
