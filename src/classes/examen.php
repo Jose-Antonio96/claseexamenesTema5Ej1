@@ -47,7 +47,7 @@ class examen{
     }
 
     public function getListaPreguntas():listadopreguntas{
-        return $this->listapreguntas;
+        return $this->listadopreguntas;
     }
 
     public function getHora():hora{
