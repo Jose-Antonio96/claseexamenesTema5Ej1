@@ -12,7 +12,7 @@ $fecha = fecha::createFecha(2020, 01, 01);
 $profesor = profesor::create("Juan", $fecha, 8956121);
 $asignaturas = asignaturas::createasignatura(21, "Base de datos");
 $listadopreguntas = new listadopreguntas();
-$listadopreguntas->addNewQuestion("¿Que es una función?", 10);
+$listadopreguntas->addNewQuestion("¿Que es una subconsulta?", 10);
 $fechaexamen = fecha::createFecha(1, 6, 2012);
 $hora = hora::createHora(10, 30, 42);
 
