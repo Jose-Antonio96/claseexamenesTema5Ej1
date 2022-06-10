@@ -5,6 +5,7 @@ use ITEC\PRESENCIAL\DAW\PROG\examen\listadopreguntas;
 use ITEC\PRESENCIAL\DAW\PROG\examen\profesor;
 use ITEC\PRESENCIAL\DAW\PROG\examen\hora;
 use ITEC\PRESENCIAL\DAW\PROG\examen\asignaturas;
+use ITEC\PRESENCIAL\DAW\PROG\examen\pregunta;
 
 class examen{
     private profesor $profesor;
@@ -33,24 +34,27 @@ class examen{
         return new examen($profesor, $fechaexamen, $asignatura, $listapreguntas, $hora);
     }
 
-    public function getProfesor(){
+    public function getProfesor():profesor{
         return $this->profesor;
     }
 
-    public function getFechaExamen(){
+    public function getFechaExamen():fecha{
         return $this->fechaexamen;
-        ;
     }
 
-    public function getAsignatura(){
+    public function getAsignatura():asignaturas{
         return $this->asignaturas;
     }
 
-    public function getListaPreguntas(){
-        return $this->listapreguntas;
+    public function getListaPreguntas():listadopreguntas{
+        return $this->listadopreguntas;
     }
 
-    public function getHora(){
+    public function getHora():hora{
         return $this->hora;
+    }
+
+    public function setProfesor(profesor $profesor){
+        return $this-> profesor = $profesor;
     }
 }
