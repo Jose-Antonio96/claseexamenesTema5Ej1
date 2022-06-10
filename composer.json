@@ -7,13 +7,11 @@
     },
     "autoload":{
         "psr-4":{ 
-            "PHPUnit\\": "vendor/phpunit/phpunit/src/",
             "ITEC\\PRESENCIAL\\DAW\\PROG\\examen\\": "src/classes"
         }
     },
     "autoload-dev": {
         "psr-4":{
-            "PHPUnit\\": "vendor/phpunit/phpunit/src/",
             "ITEC\\PRESENCIAL\\DAW\\PROG\\examen\\": "src/classes"
         }
     }
